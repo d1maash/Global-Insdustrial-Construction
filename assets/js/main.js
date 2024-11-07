@@ -296,3 +296,20 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
 });
+
+const carousel = document.querySelector('.carousel');
+let currentIndex = 0;
+
+function updateCarousel() {
+    const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
+    carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+}
+
+function startCarousel() {
+    setInterval(() => {
+        currentIndex = (currentIndex + 1) % carousel.children.length;
+        updateCarousel();
+    }, 3000); // смена слайда каждые 3 секунды
+}
+
+window.addEventListener('load', startCarousel);
