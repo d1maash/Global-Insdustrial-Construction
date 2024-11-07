@@ -10,8 +10,8 @@
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link href="assets/img/gic images/logo/gic logo.PNG" rel="icon">
-    <link href="assets/img/gic images/logo/gic logo.PNG" rel="apple-touch-icon">
+    <link href="assets/img/gic images/logo/gic logo.png" rel="icon">
+    <link href="assets/img/gic images/logo/gic logo.png" rel="apple-touch-icon">
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -365,13 +365,54 @@
                         </div>
                         <div class="swiper-slide"><img src="assets/img/gic images/company/partners/rockwell.png"
                                 class="img-fluid" alt="">
-                            6 </div>
+                        </div>
                     </div>
                 </div>
 
             </div>
         </section><!-- End Clients Section -->
+        <section class="team-section">
+            <div class="section-header">
+                <h2>Наша команда</h2>
+            </div>
+            <div class="carousel-container">
+                <div class="carousel">
+                    <div class="carousel-item">
+                        <img src="photo1.jpg" alt="Димаш Айжарыков">
+                        <h3>Димаш Айжарыков</h3>
+                        <p>Основатель</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="photo2.jpg" alt="Алина Иванова">
+                        <h3>Алина Иванова</h3>
+                        <p>UI/UX Дизайнер</p>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="photo3.jpg" alt="Игорь Смирнов">
+                        <h3>Игорь Смирнов</h3>
+                        <p>Frontend Разработчик</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <script>
+            const carousel = document.querySelector('.carousel');
+            let currentIndex = 0;
 
+            function updateCarousel() {
+                const itemWidth = carousel.querySelector('.carousel-item').offsetWidth;
+                carousel.style.transform = `translateX(-${currentIndex * itemWidth}px)`;
+            }
+
+            function startCarousel() {
+                setInterval(() => {
+                    currentIndex = (currentIndex + 1) % carousel.children.length;
+                    updateCarousel();
+                }, 3000); // смена слайда каждые 3 секунды
+            }
+
+            window.addEventListener('load', startCarousel);
+        </script>
         <!-- ======= Services Section ======= -->
         <section id="services" class="services">
             <div class="container" data-aos="fade-up">

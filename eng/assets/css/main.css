@@ -3204,3 +3204,47 @@ section {
     background-color: var(--color-primary);
     color: var(--color-white);
 }
+
+
+.team-section {
+    text-align: center;
+    padding: 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    transition: transform 0.5s ease;
+}
+
+.carousel-item {
+    min-width: 100%;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+}
+
+.carousel-item img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.carousel-item h3 {
+    font-size: 24px;
+    color: black;
+    margin-bottom: 5px;
+}
+
+.carousel-item p {
+    font-size: 18px;
+    color: #555;
+}
