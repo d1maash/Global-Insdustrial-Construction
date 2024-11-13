@@ -365,54 +365,56 @@
         </section><!-- End Clients Section -->
 
         <!-- ======= Team Section ======= -->
-        <div class="container">
-            <div class="row">
-                <div class="col-xs-11 col-md-10 col-centered">
-
-                    <div id="carousel" class="carousel slide" data-ride="carousel" data-type="multi"
-                        data-interval="2500">
-                        <div class="carousel-inner">
-                            <div class="item active">
-                                <div class="carousel-col">
-                                    <div class="block red img-responsive"></div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="carousel-col">
-                                    <div class="block green img-responsive"></div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="carousel-col">
-                                    <div class="block blue img-responsive"></div>
-                                </div>
-                            </div>
-                            <div class="item">
-                                <div class="carousel-col">
-                                    <div class="block yellow img-responsive"></div>
-                                </div>
-                            </div>
+        <section>
+            <div id="teamCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3000">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/100" alt="Team Member 1">
+                            <h5>Имя 1</h5>
+                            <p>Должность 1</p>
                         </div>
-
-                        <!-- Controls -->
-                        <div class="left carousel-control">
-                            <a href="#carousel" role="button" data-slide="prev">
-                                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-                                <span class="sr-only">Previous</span>
-                            </a>
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/100" alt="Team Member 2">
+                            <h5>Имя 2</h5>
+                            <p>Должность 2</p>
                         </div>
-                        <div class="right carousel-control">
-                            <a href="#carousel" role="button" data-slide="next">
-                                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-                                <span class="sr-only">Next</span>
-                            </a>
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/100" alt="Team Member 3">
+                            <h5>Имя 3</h5>
+                            <p>Должность 3</p>
                         </div>
                     </div>
-
+                    <div class="carousel-item">
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/100" alt="Team Member 4">
+                            <h5>Имя 4</h5>
+                            <p>Должность 4</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/100" alt="Team Member 5">
+                            <h5>Имя 5</h5>
+                            <p>Должность 5</p>
+                        </div>
+                        <div class="team-member">
+                            <img src="https://via.placeholder.com/100" alt="Team Member 6">
+                            <h5>Имя 6</h5>
+                            <p>Должность 6</p>
+                        </div>
+                    </div>
+                    <!-- Добавьте больше слайдов с участниками команды здесь -->
                 </div>
+                <!-- Навигационные кнопки -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#teamCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Предыдущий</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#teamCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Следующий</span>
+                </button>
             </div>
-        </div>
-
+        </section>
         <!-- ======= Services Section ======= -->
         <section id="services" class="services">
             <div class="container" data-aos="fade-up">
@@ -1148,7 +1150,8 @@
                             <li><i class="bi bi-chevron-right"></i> <a href="index.html">Главная</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="index.html#about">О нас</a></li>
                             <li><i class="bi bi-chevron-right"></i> <a href="index.html#services">Сервисы</a></li>
-                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#portfolio">Наши услуги</a></li>
+                            <li><i class="bi bi-chevron-right"></i> <a href="index.html#portfolio">Наши услуги</a>
+                            </li>
                             <li><i class="bi bi-chevron-right"></i> <a href="index.html#contact">Контакты</a></li>
                         </ul>
                     </div>
@@ -1162,7 +1165,8 @@
 
                 <div class="d-flex flex-column align-items-center align-items-lg-start">
                     <div class="copyright">
-                        &copy; Copyright <strong><span>ТОО «GLOBAL INDUSTRIAL CONSTRUCTION»</span></strong>. All Rights
+                        &copy; Copyright <strong><span>ТОО «GLOBAL INDUSTRIAL CONSTRUCTION»</span></strong>. All
+                        Rights
                         Reserved
                     </div>
                     <div class="credits">

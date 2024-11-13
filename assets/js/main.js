@@ -313,3 +313,6 @@ function startCarousel() {
 }
 
 window.addEventListener('load', startCarousel);
+
+
+

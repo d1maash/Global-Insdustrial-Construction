@@ -3247,3 +3247,20 @@ section {
     font-size: 18px;
     color: #555;
 }
+
+.team-member img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.carousel-inner {
+    margin-top: 30px;
+}
