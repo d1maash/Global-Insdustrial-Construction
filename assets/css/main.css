@@ -3207,10 +3207,11 @@ section {
 }
 
 .team-member {
-    height: 300px;
+    height: 500px;
     /* Установите фиксированную высоту для слайдов */
     text-align: center;
     align-items: center;
+    width: 100%;
 }
 
 
@@ -3238,7 +3239,27 @@ section {
     width: 200px;
 }
 
-.swiper-wrapper {
-    align-items: center;
-    /* Центрирует слайды по вертикали */
+.team-member {
+    max-width: 500px;
+    /* Ограничение ширины блока */
+    text-align: center;
+}
+
+.team-member h4 {
+    font-size: 18px;
+    width: 100%;
+    font-weight: 500;
+    /* Уменьшение размера шрифта имени */
+    word-wrap: break-word;
+    /* Перенос текста по словам */
+    white-space: normal;
+    /* Позволяет тексту занимать несколько строк */
+    margin: 0;
+}
+
+.team-member p {
+    font-size: 14px;
+    /* Уменьшение размера шрифта должности */
+    word-wrap: break-word;
+    /* Перенос текста по словам */
 }
